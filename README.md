@@ -1,7 +1,7 @@
 Demonstration of Paho breaking SSL, leading to `handshake_failure`
 ==================================================================
 
-Demonstration of an issue when using a `HTTP CONNECT` proxy with Paho and a custom SocketFactory. While it is possible
+Demonstration of [an issue](https://github.com/eclipse/paho.mqtt.java/issues/335) when using a `HTTP CONNECT` proxy with Paho and a custom SocketFactory. While it is possible
 to use the factory to connect to the MQTT server manually without a problem, when Paho does it, it fails with a
 `javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure`.
 
